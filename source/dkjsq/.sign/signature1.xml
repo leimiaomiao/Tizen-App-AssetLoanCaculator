@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+HG7z1xiJrx5XwmG6U3+AcYvWmLunV7fBSW22sv0W+U=</DigestValue>
+<DigestValue>62YiXQQjBLqFrEZ8QKt7ISW+3WPXbU/S8ukzGsKapUk=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2155,9 +2155,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-h4XKgA5VY6x1t0eymFlGDdGyg1Rf29zE0NihjTfBlUhZ73EoCIhzAgjzP6oLOVlfl8wl/qeNe8LC
-R8DigEAhDDJgje6jfxhSLdCE8ggYVlrbhvvDwuRsccs4nqRIBQmehQuRF60K9cdlY2rpbb6AGZ2c
-xKQzpYQbOjgOWECbz7A=
+rtxC6nbqRcSuiQrScMr88gEW0TAwjy8mobOFB2J3Uu/vtDxrgj7iSiwpxWgMbEQ8JD4DUOp/3ZoU
+F3onqmZJDrXxWwdR78FEeoUF+WZ/GppYa6RPKWn4Yxcq0jHnkXiF/Cr2KAw5OHTKUVsedYvrP/BB
+7L7AfZ7diqMHeL1OD0U=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
