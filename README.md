@@ -119,7 +119,6 @@ function reg_Num(str){
 
 ####计算结果
 <pre>
-
 function cal(flag){
 	var years = document.getElementById("jsq_ns").value;
 	var month =document.getElementById("jsq_ns").value * 12;
