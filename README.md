@@ -14,11 +14,11 @@ var sydkze;//商业贷款总额
 var gjjdkze;//公积金贷款总额
 var syll;//商业利率
 var gjjll;//公积金利率
-var dkze;//
-var hkze;//
-var zflxs;//
-var sqfk;//
-var yjhk;//
+var dkze;
+var hkze;
+var zflxs;
+var sqfk;
+var yjhk;
 </pre>
 
 ####事件注册
@@ -60,18 +60,15 @@ var init = function () {
     backEventListener = backEvent;
     var debj =function(e){
     	 $.mobile.changePage('#page2');
-    	// document.getElementById("divcontrol1").innerHTML=document.getElementById("textinput1").value;
     	 cal(1);
     }
     var debx =function(e){
    	 $.mobile.changePage('#page2');
-   	// document.getElementById("divcontrol1").innerHTML=document.getElementById("textinput1").value;
    	 cal(0);
 
    }  
     var back =function(e){
       	 $.mobile.changePage('#page1');
-      	// document.getElementById("divcontrol1").innerHTML=document.getElementById("textinput1").value;  	
       }
     $("#button_debj").bind("click",debj);
     $("#button_debx").bind("click", debx);
@@ -108,7 +105,6 @@ function format(money){
 </pre>
 
 ####验证是否为数字
-
 <pre>
 function reg_Num(str){
 	if (str.length == 0){return true;}
@@ -141,8 +137,6 @@ function cal(flag){
 		if(!reg_Num(sydkze)){alert("商贷不能为非数字");return false;}else{sydkze*=10000;}
 		if(!reg_Num(gjjdkze)){alert("公积金不能为非数字");return false;}else{gjjdkze*=10000;}
 		if(!reg_Num(years)||years.length==0){alert("贷款年数不能为空和非数字！");return false;}		
-//
-//
 		var total_sy;
 		var total_gjj;
 		if(sydkze.length==0){
@@ -165,10 +159,9 @@ function cal(flag){
 			alert("公积金贷款利率不能为空和非数字！");
 			return false;
 		}
-	//贷款总额		
+		//贷款总额		
 		var daikuan_total = total_sy + total_gjj;
 		dkze.innerHTML = daikuan_total+ "(元)";
-		//月还款
 		var lilv_sd = syll / 100;//得到商贷利率
 		var lilv_gjj = gjjll / 100;//得到公积金利率
 		//1.本金还款
@@ -224,5 +217,4 @@ function cal(flag){
 			sqfk.innerHTML= Math.round(month_money1 * 100) / 100+ "(元)";
 		}	
 		dkys.innerHTML=month+ "(月)";
-	//document.getElementById("jsq_yjhk").innerHTML="hello world!";
 }
